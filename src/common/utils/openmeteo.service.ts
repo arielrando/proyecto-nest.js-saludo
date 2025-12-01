@@ -104,7 +104,11 @@ export class OpenmeteoService {
         this.saveTime(tSunset, 2, res);
         break;
       case 3:
-        this.saveTime(tSunriseTomorrow, 3, res);
+        if(tNow<tSunrise){
+          this.saveTime(tSunrise, 3, res);
+        }else{
+          this.saveTime(tSunriseTomorrow, 3, res);
+        }
         break;
     }
 
