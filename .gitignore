@@ -1,0 +1,16 @@
+# Node
+node_modules/
+dist/
+.env
+
+# Logs
+logs/
+*.log
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Sistema
+.DS_Store
+Thumbs.db
