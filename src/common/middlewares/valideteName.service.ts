@@ -10,9 +10,6 @@ export class ValidateNameMiddleware implements NestMiddleware {
 
   use(req: Request, res: Response, next: NextFunction) {
     const nombre = req.params.nombre ?? req.query.nombre ?? req.body.nombre;
-    console.log('Middleware - req.params:', req.params);
-    console.log('Middleware - req.query:', req.query);
-    console.log('Middleware - nombre:', nombre);
 
     if (typeof nombre !== 'string' || nombre.trim() === '') {
       this.logger.error('No ingreso el nombre');

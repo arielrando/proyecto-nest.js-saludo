@@ -2,7 +2,7 @@ import { Controller, Get, Post, Req, Res } from '@nestjs/common';
 import { Request, Response } from 'express';
 import { WelcomeService } from './welcome.service';
 
-@Controller("welcome")
+@Controller("api/welcome")
 export class WelcomeController {
   constructor(private readonly WelcomeService: WelcomeService) {}
 

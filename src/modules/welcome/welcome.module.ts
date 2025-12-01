@@ -15,9 +15,9 @@ export class WelcomeModule implements NestModule {
     consumer
       .apply(ValidateNameMiddleware)
       .forRoutes(
-        { path: 'welcome', method: RequestMethod.GET },
-        { path: 'welcome/:nombre', method: RequestMethod.GET },
-        { path: 'welcome', method: RequestMethod.POST }
+        { path: 'api/welcome', method: RequestMethod.GET },
+        { path: 'api/welcome/:nombre', method: RequestMethod.GET },
+        { path: 'api/welcome', method: RequestMethod.POST }
       ); // Aplica a todas las rutas de /welcome
   }
 }
