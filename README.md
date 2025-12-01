@@ -36,20 +36,20 @@ El proyecto cuenta con una sola api: "**saludo**", la cual solo se encarga de re
 ```
 para acceder a dicho saludo hay 3 maneras de hacerlo:
 1. Por medio de la URL (**GET**)
-    Para que la API lo salude deberá ingresar a <http://localhost:3000/api/saludo/SuNombre>, debiendo modificar **SuNombre** por el nombre que usted quiera que la api salude. Si no ingresa nada o si ingresa caracteres especiales y/o números se devolverá un mensaje de error.
+    Para que la API lo salude deberá ingresar a <http://localhost:3000/api/welcome/SuNombre>, debiendo modificar **SuNombre** por el nombre que usted quiera que la api salude. Si no ingresa nada o si ingresa caracteres especiales y/o números se devolverá un mensaje de error.
    
 2. Por medio de la URL con Query String (**GET**)
-    La otra manera es agregando el parámetro **nombre** en la url como un query string de la siguiente manera: <http://localhost:3000/api/saludo?nombre=SuNombre>. al igual que el anterior caso se mostrará un mensaje de error si no se respeta el formato esperado en el nombre y si en la query string no se encuentra el parámetro **nombre**.
+    La otra manera es agregando el parámetro **nombre** en la url como un query string de la siguiente manera: <http://localhost:3000/api/welcome?nombre=SuNombre>. al igual que el anterior caso se mostrará un mensaje de error si no se respeta el formato esperado en el nombre y si en la query string no se encuentra el parámetro **nombre**.
    
 3. Por medio de un JSON en el Body del Request (**POST**)
-    La última manera es por medio del método POST, enviando un objeto en formato JSON en el body del request de la siguiente manera:
+    La última manera es por medio del método POST a la url <http://localhost:3000/api/welcome>, enviando un objeto en formato JSON en el body del request de la siguiente manera:
     ```json
     {"nombre": "SuNombre"}
     ```
     Al igual que los demás casos se devolverá un mensaje de error si no se respeta el formato del nombre y si no envía el parámetro nombre en el objeto en formato JSON.
 
 ## Demo en vivo
-https://proyecto-nestjs-saludo.onrender.com/api/saludo/juan
+https://proyecto-nestjs-saludo.onrender.com/api/welcome/juan
 
 ## Problemas Conocidos
 si se envia una query muy larga puede romper el proyecto.
