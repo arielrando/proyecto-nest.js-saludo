@@ -1,5 +1,5 @@
 # Saludo API
-Este es un pequeño proyecto hecho en Node.js y TypeScript que simula el funcionamiento de una API.
+Este es un pequeño hecho en Node.js y TypeScript que simula el funcionamiento de una API.
 
 ## Tecnologías usadas
 
