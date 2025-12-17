@@ -1,5 +1,5 @@
 # Saludo API
-Este es un proyecto hecho en Node.js y TypeScript que simula el funcionamiento de una API.
+Este es un proyecto hecho en Node.js y Nest.js que simula el funcionamiento de una API.
 
 ## Tecnologías usadas
 
